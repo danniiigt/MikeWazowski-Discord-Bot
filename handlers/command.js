@@ -27,7 +27,7 @@ module.exports = (client) => {
           );
       }
     });
-    console.log(`${comandos} Comandos cargados`.bgGreen);
+    console.log("> " + `${comandos}`.blue + ` Comandos cargados`);
   } catch (error) {
     console.log(error);
   }

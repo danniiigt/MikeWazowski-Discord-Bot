@@ -5,7 +5,6 @@ const allEvents = [];
 module.exports = async (client) => {
   try {
     try {
-      console.log(`Cargando los eventos...`.yellow);
     } catch (error) {}
 
     let cantidad = 0;
@@ -28,13 +27,7 @@ module.exports = async (client) => {
     };
 
     await ["client", "guild"].forEach((e) => cargar_dir(e));
-    console.log(`${cantidad} Eventos cargados`.bgGreen);
-
-    try {
-      console.log(`Iniciando sesion en el Bot...`.yellow);
-    } catch (error) {
-      console.log(error);
-    }
+    console.log("> " + `${cantidad}`.blue + ` Eventos cargados`);
   } catch (error) {
     console.log(error);
   }

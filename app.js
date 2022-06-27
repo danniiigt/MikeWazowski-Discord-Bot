@@ -14,6 +14,8 @@ const client = new Discord.Client({
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
+console.clear();
+console.log(" Created by @danniiigt \n".bgBlue);
 const requerirHandlers = () => {
   ["command", "events", "distube"].forEach((handler) => {
     try {
